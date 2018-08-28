@@ -22,7 +22,8 @@
                  age: 30
              }
              handleClick(e){
-                 console.log(e.target)
+                /*  console.log(e.target) */
+                console.log(this.state.age)
              }
              handleMouseOver(e){
                  console.log(e.target, e.pageX)
@@ -35,7 +36,7 @@
                      <div className="app-content">
                         <h1>Hey, ninjas</h1>
                         <p>My name is: { this.state.name  } and I am { this.state.age }</p>
-                        <p>{ Math.random() * 10 }</p>
+                        // <p>{ Math.random() * 10 }</p>
                         <button onClick={this.handleClick}>Click Me</button>
                         <button onMouseOver={this.handleMouseOver}>Hover me</button>
                         <p onCopy={this.handleCopy}>What we think, we become</p>
