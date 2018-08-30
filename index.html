@@ -21,15 +21,18 @@
                  name: 'Ryu',
                  age: 30
              }
-             //start of handle events
-             handleClick(e){
+             handleClick = (e) => {
                 /*  console.log(e.target) */
-                console.log(this.state.age)
+                this.setState({
+                    name: 'Yoshi',
+                    age: 25
+                });
+                console.log(this.state)
              }
-             handleMouseOver(e){
+             handleMouseOver = (e) => {
                  console.log(e.target, e.pageX)
              }
-             handleCopy(e){
+             handleCopy = (e) => {
                  console.log('Try being original for once!');
              }
              render(){
@@ -37,7 +40,6 @@
                      <div className="app-content">
                         <h1>Hey, ninjas</h1>
                         <p>My name is: { this.state.name  } and I am { this.state.age }</p>
-                        // <p>{ Math.random() * 10 }</p>
                         <button onClick={this.handleClick}>Click Me</button>
                         <button onMouseOver={this.handleMouseOver}>Hover me</button>
                         <p onCopy={this.handleCopy}>What we think, we become</p>
