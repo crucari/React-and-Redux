@@ -18,4 +18,4 @@ const Ninjas = ({ninjas}) => {
     )
 }
 
-export default Ninjas
+export default Ninjas  //esport ninjas
