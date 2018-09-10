@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Ninjas from './Ninjas';
 
 class App extends Component {
+  //array of ninjas
   state = {
     ninjas : [
       { name: 'Ryu', age: 30, belt: 'black', id: 1},
