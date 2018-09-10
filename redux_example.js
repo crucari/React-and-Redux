@@ -7,8 +7,12 @@ Const initState = {
 }
 
 Function myreducer(state = initState, action){
-console.log(action, state)
-
+//console.log(action, state) //
+If (action.type == ‘ADD_TODO’) {
+     Return {
+        Todos: [... state.todos, action.todo]]
+}
+}
 }
 
 
