@@ -6,33 +6,41 @@ Const initState = {
       Posts: [ ]
 }
 
-Function myreducer(state = initState, action){
-//console.log(action, state) //
-If (action.type == ‘ADD_TODO’) {
-     Return {
-        Todos: [... state.todos, action.todo]]
 
-//updating the state.
-//This return represents the new state of the store.
-//This does not update the state directly.
-//We want to be non-destructive.
-//The new array is spread
-//so we get individual elements out of the state,
-//and then we want to add the new element
-//which in this case is action.to do.
-//The new todo is now added to the todos property//
+
+
+Function myreducer(state = initState, action){
+If (action.type == ‘ADD_TODO’) {
+     return {
+        Todos: [... state.todos, action.todo]]  //updating the state.
 }
 }
+
+
+If (action.type == ‘ADD_POST’) {
+     return {
+        posts: [... state.todos, action.todo]]  //updating the state.
+}
+}
+
 }
 
 
 Const store = createStore(myreducer);
 
-Const todoAction = { type: ‘ADD_TODO’, todo: ‘buy milk’ } //creates an action: has a type property(describes what it does) + optional load of date(in this case called todo, with a string passed as the value//
+
+store.subscribe((  ) => {
+   console.log(‘state updated’);
+   console.log(store.getState( ));
 
 
-store.dispatch(todoAction)
+})
+Const todoAction = { type: ‘ADD_TODO’, todo: ‘buy milk’ }
 
+
+store.dispatch(type: ‘ADD_TODO’, todo: ‘buy milk’});
+store.dispatch(type: ‘ADD_TODO’, todo: ‘sleep some more’});
+store.dispatch(type: ‘ADD_TODO’, post: ‘Egg hunt with yoshi’’});
 
 
 store.dispatch(todoAction) //this dispatches the action
