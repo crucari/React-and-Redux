@@ -38,7 +38,7 @@ store.subscribe((  ) => {
 Const todoAction = { type: ‘ADD_TODO’, todo: ‘buy milk’ }
 
 
-store.dispatch(type: ‘ADD_TODO’, todo: ‘buy milk’});
+store.dispatch(type: ‘ADD_TODO’, todo: ‘buy milk’}); //add todos
 store.dispatch(type: ‘ADD_TODO’, todo: ‘sleep some more’});
 store.dispatch(type: ‘ADD_TODO’, post: ‘Egg hunt with yoshi’’});
 
