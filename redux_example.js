@@ -26,7 +26,7 @@ If (action.type == ‘ADD_POST’) {
 }
 
 
-Const store = createStore(myreducer);
+Const store = createStore(myreducer); //create store
 
 
 store.subscribe((  ) => {
